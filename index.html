@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                /* only to force vertical scroll on browsers */
+                overflow-y: scroll;
+                /* remove default paddings and margins on browsers */
+                padding: 0;
+                margin: 0;
+            }
+
+            #wrap {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                display: table;
+                width: 100%;
+                height: 100%;
+            }
+
+            #innerwrap {
+                display: table-row;
+                height: 100%;
+                background-color: green; /* DELETE THIS. ONLY FOR DEMO */
+            }
+
+            #footer {
+                display: table-row;
+                height: 1px;
+            }
+            /* Sticky footer ends here
+            -------------------------------------------------- */
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+
+            <div id="innerwrap">
+                [ [*content]]
+            </div><!-- innerwrap -->
+
+            <footer id="footer">
+                [ [*footer]]
+            </footer><!-- footer -->
+
+        </div><!-- wrap -->
+    </body>
+</html>
